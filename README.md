@@ -1,2 +1,4 @@
 # Nightsmore.github.io
-Yes. 
+This site currently serves no purpose.  Come back later!
+
+# ?!?
