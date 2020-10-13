@@ -24,6 +24,6 @@ function getRepos(url)
 }
 
 window.onload = function () {
-    var v = getRepos("https://github.com/Nightsmore?tab=repositories")
+    var v = getRepos("https://api.github.com/users/Nightsmore/repos")
     populateList(v);
 }
