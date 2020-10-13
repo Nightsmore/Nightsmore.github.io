@@ -7,7 +7,7 @@ function populateList(pr)
     
     for(i = 0; i < pr.length; i++)
     {
-        li.setAttribute('id', pr.value);
+        li.setAttribute('id', pr[i].value);
         li.appendChild(document.createTextNode(pr[i].value));
         ul.appendChild(li);
     }
