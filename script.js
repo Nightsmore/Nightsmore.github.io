@@ -31,8 +31,9 @@ function getRepos(url, callback)
 function httpGet(url)
 {
     var xmlhttp = new XMLHttpRequest();
+    //readyState value has made me upsetti speghetti.
     xmlhttp.onreadystatechange = function() {
-        if (this.readyState == 4 && this.status == 200) {
+        if (this.readyState == 1 && this.status == 200) {
             var myArr = JSON.parse(this.responseText);
             populateList(myArr);
         }
