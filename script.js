@@ -13,7 +13,7 @@ function populateList(pr)
         //li.setAttribute('id', pr.value);
         //li.appendChild(document.createTextNode(pr.value));
         //ul.appendChild(li);
-        ul.innerHTML += "<li>" + pr[i].name + " | " +  pr[i].description + "</li>";
+        ul.innerHTML += "<li><a href=" + pr[i].html_url + "/>" + pr[i].name + " | " +  pr[i].description + "</li>";
     }
     
 

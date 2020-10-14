@@ -35,7 +35,16 @@ p {
 }
 li {
   margin: 5%;
+  font-size: 110%;
+}
+a{
+  text-decoration: none;
   font-size: 150%;
+  
+}
+a:hover {
+  color: orange;
+  transition: 0.8s;
 }
 
 
