@@ -1,6 +1,6 @@
 function populateList(pr)
 {
-    console.log(pr[0].name);
+    console.log(pr[8]);
     var ul = document.getElementById("dynamic-list");
     
     var li = document.createElement("li");
@@ -13,7 +13,7 @@ function populateList(pr)
         //li.setAttribute('id', pr.value);
         //li.appendChild(document.createTextNode(pr.value));
         //ul.appendChild(li);
-        ul.innerHTML += "<li>" + pr[i].name + "</li>";
+        ul.innerHTML += "<li>" + pr[i].name + " | " +  pr[i].description + "</li>";
     }
     
 
@@ -51,5 +51,6 @@ function httpGet(url)
 window.onload = function () {
     httpGet("https://api.github.com/users/Nightsmore/repos")
     
+  
     
 }
