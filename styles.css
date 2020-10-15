@@ -16,14 +16,11 @@ div.title
 {
   position: -webkit-sticky;
   position: sticky;
- 
   top: 0;
-  
-  padding: 20px;
+  margin-top: 10%;
   margin-bottom: 20%;
   text-align: center;
-
-  font-size:5vw;
+  font-size:7vw;
   line-height: 5vw;
   transform-origin: left top;
 
@@ -31,11 +28,70 @@ div.title
   
 }
 
+.description
+{
+  
+  height: 100vh;
+}
 
+#desc_h{
+  text-align: center;
+  font-size: 6vh;
+  padding: 0%;
+}
+#desc_p{
+  text-align: center;
+  padding-top: 0;
+  
+}
+.collapsible {
+  text-decoration: none;
+  background: none;
+  display: flex;
+  font-size: 5vh;
+  width: 100vw;
+  outline-style: none;
+  border-style: none;
+  
+}
+
+
+.collapsible:after {
+  content: '\002B';
+  color: white;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.collapsible:after {
+  content: '\02795'; /* Unicode character for "plus" sign (+) */
+  font-size: 13px;
+  color: white;
+  float: right;
+  margin-left: 5px;
+}
+.active:after {
+  content: "\2796"; /* Unicode character for "minus" sign (-) */
+}
+.content
+{
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: #f1f1f1;
+}
+.collapsible:hover
+{
+  color: orange;
+  transition: 0.8s;
+
+}
 
 p {
   display: block;
-  width: 400px;
+  width: 30vw;
   margin: 50px auto;
 
 }
@@ -45,14 +101,13 @@ p {
   padding-bottom: 10%;
   position: -webkit-sticky;
   position: sticky;
-  top:20%; 
+  top:0; 
   margin-left:  auto;
   display: block;
   margin: 40px auto;
   width: 450px;
   list-style-type: none;
   height: 100vh;
-  
   
 }
 li {
@@ -76,6 +131,8 @@ html, body{
   background-repeat: no-repeat;
   background-attachment:  fixed;
   margin-top: 8%;
+  margin-right: 0;
+  
   
 }
 

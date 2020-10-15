@@ -1,21 +1,19 @@
 function populateList(pr)
 {
-    console.log(pr[8]);
+    
     var ul = document.getElementById("dynamic-list");
     
-    var li = document.createElement("li");
-    document.createElement("li")
-    
-   
     for(let i = 0; i < pr.length; i++)
     {
         console.log(pr)
         //li.setAttribute('id', pr.value);
         //li.appendChild(document.createTextNode(pr.value));
         //ul.appendChild(li);
-        ul.innerHTML += "<li><a href=" + pr[i].html_url + "/>" + pr[i].name + " | " +  pr[i].description + "</li>";
+        ul.innerHTML += '<button class="collapsible">' + pr[i].name + "</button>";
+        ul.innerHTML += '<div class="content">' +'<p>' + pr[i].description+ '</p>' + '</div>';
     }
     
+    //<a href=' + pr[i].html_url + '/>'
 
 }
 
@@ -47,7 +45,10 @@ function httpGet(url)
     xmlhttp.send();
     
 }
-
+function setCollapsibles()
+{
+    
+}
 window.onload = function () {
     httpGet("https://api.github.com/users/Nightsmore/repos")
     
@@ -60,5 +61,29 @@ window.onload = function () {
             $('.title').css('transform', 'scale('+ mass + ')');
         })
     })
-   
+
+    setCollapsibles();
+    var coll = document.getElementById("dynamic-list").getElementsByClassName("collapsible");
+    var j;
+    console.log("here")
+    console.log("length is" + coll.length)
+    for (let j = 0; j < coll.length; j++) 
+    {
+        console.log("here too")
+        coll[j].addEventListener("click", function() 
+        {
+            console.log(coll[j])
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.maxHeight)
+            {
+                content.style.maxHeight = null;
+            } else 
+            {
+                content.style.maxHeight = content.scrollHeight + "px";
+            } 
+        });
+    }
 }
+
+
