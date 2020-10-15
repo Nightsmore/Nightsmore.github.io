@@ -7,7 +7,7 @@ function populateList(pr)
     document.createElement("li")
     
    
-    for(i = 0; i < pr.length; i++)
+    for(let i = 0; i < pr.length; i++)
     {
         console.log(pr)
         //li.setAttribute('id', pr.value);
