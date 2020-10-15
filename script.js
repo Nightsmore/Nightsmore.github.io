@@ -51,6 +51,14 @@ function httpGet(url)
 window.onload = function () {
     httpGet("https://api.github.com/users/Nightsmore/repos")
     
-  
-    
+    $(function() 
+    {
+        $(window).scroll(function()
+        {
+            var mass = Math.max(0.3, 1- 0.003*$(this).scrollTop());
+
+            $('.title').css('transform', 'scale('+ mass + ')');
+        })
+    })
+   
 }
