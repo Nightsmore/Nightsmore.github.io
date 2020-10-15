@@ -48,14 +48,11 @@ a:hover {
 }
 
 html, body{
-  height: 100%;
-  background: rgb(214,214,214);
-  background: -moz-radial-gradient(circle, rgba(214,214,214,1) 78%, rgba(255,255,255,1) 100%);
-  background: -webkit-radial-gradient(circle, rgba(214,214,214,1) 78%, rgba(255,255,255,1) 100%);
-  background: radial-gradient(circle, rgba(214,214,214,1) 78%, rgba(255,255,255,1) 100%);
-
-
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#d6d6d6",endColorstr="#ffffff",GradientType=1);
+  background: rgb(45,46,48);
+  background: -moz-radial-gradient(circle, rgba(45,46,48,1) 28%, rgba(215,215,228,1) 51%);
+  background: -webkit-radial-gradient(circle, rgba(45,46,48,1) 28%, rgba(215,215,228,1) 51%);
+  background: radial-gradient(circle, rgba(45,46,48,1) 28%, rgba(215,215,228,1) 51%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#2d2e30",endColorstr="#d7d7e4",GradientType=1);
 
   background-repeat: no-repeat;
   background-attachment:  fixed;
