@@ -5,14 +5,20 @@
   font-size: 20px;
   font-weight: 300;
   color: white;
+  box-sizing: border-box;
   
 }
 
+div{
+  padding: 10px;
+}
 div.title
 {
   position: -webkit-sticky;
   position: sticky;
+ 
   top: 0;
+  
   padding: 20px;
   margin-bottom: 20%;
   text-align: center;
@@ -20,23 +26,11 @@ div.title
   font-size:5vw;
   line-height: 5vw;
   transform-origin: left top;
-}
 
-div.about
-{
-  padding:3%;
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0;
-  bottom:1;
-  text-align: center;
-  bottom: -5;
-  display: block;
-  font-size: 20px;
-  height: 3%;
-  border-bottom-style: solid;
+  
   
 }
+
 
 
 p {
@@ -48,7 +42,7 @@ p {
 
 #dynamic-list
 {
-  padding:3%;
+  padding-bottom: 10%;
   position: -webkit-sticky;
   position: sticky;
   top:20%; 
@@ -57,12 +51,14 @@ p {
   margin: 40px auto;
   width: 450px;
   list-style-type: none;
+  height: 100vh;
   
   
 }
 li {
   margin: 5%;
   font-size: 110%;
+  
 }
 a{
   text-decoration: none;
@@ -75,14 +71,10 @@ a:hover {
 }
 
 html, body{
-  background: rgb(88,88,88);
-  background: -moz-radial-gradient(circle, rgba(88,88,88,1) 3%, rgba(62,62,62,1) 39%, rgba(28,28,28,1) 94%);
-  background: -webkit-radial-gradient(circle, rgba(88,88,88,1) 3%, rgba(62,62,62,1) 39%, rgba(28,28,28,1) 94%);
-  background: radial-gradient(circle, rgba(88,88,88,1) 3%, rgba(62,62,62,1) 39%, rgba(28,28,28,1) 94%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#585858",endColorstr="#1c1c1c",GradientType=1);
+  background: rgb(0,0,0);
+  background: radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 35%, rgba(121,121,121,1) 100%); 
   background-repeat: no-repeat;
   background-attachment:  fixed;
-  height: 200%;
   margin-top: 8%;
   
 }
