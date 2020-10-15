@@ -47,11 +47,17 @@ a:hover {
   transition: 0.8s;
 }
 
+html, body{
+  height: 100%;
+  background: rgb(214,214,214);
+  background: -moz-radial-gradient(circle, rgba(214,214,214,1) 78%, rgba(255,255,255,1) 100%);
+  background: -webkit-radial-gradient(circle, rgba(214,214,214,1) 78%, rgba(255,255,255,1) 100%);
+  background: radial-gradient(circle, rgba(214,214,214,1) 78%, rgba(255,255,255,1) 100%);
 
-html{
-  background: rgb(49, 49, 49);
-  background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(38,88,120,0.0032387955182072714) 0%, rgba(0,212,255,1) 0%, rgba(70,70,70,1) 0%, rgba(106,106,106,1) 100%);
-  }
 
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#d6d6d6",endColorstr="#ffffff",GradientType=1);
 
+  background-repeat: no-repeat;
+  background-attachment:  fixed;
+}
 
