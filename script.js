@@ -10,7 +10,11 @@ function populateList(pr)
         //li.appendChild(document.createTextNode(pr.value));
         //ul.appendChild(li);
         ul.innerHTML += '<button class="collapsible">' + pr[i].name + "</button>";
-        ul.innerHTML += '<div class="content">' +'<p>' + pr[i].description+ '</p>' + '</div>';
+        ul.innerHTML += '<div class="content">' +'<p style="font-style: italic;">' + '"' + 
+            pr[i].description+ '"' +  '</p>\n' + 
+            '<a href=' + pr[i].html_url + '>' +  '> go to page' + '</a>' + '</div>';
+        
+        
     }
     setCollapsibles();
     //<a href=' + pr[i].html_url + '/>'
