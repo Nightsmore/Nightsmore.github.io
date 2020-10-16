@@ -80,7 +80,7 @@ div.title
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.2s ease-out;
-  background-color: #f1f1f1;
+  
 }
 .collapsible:hover
 {
@@ -126,8 +126,8 @@ a:hover {
 }
 
 html, body{
-  background: rgb(0,0,0);
-  background: radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 35%, rgba(121,121,121,1) 100%); 
+  background: rgb(62,50,39);
+  background: radial-gradient(circle, rgba(62,50,39,1) 15%, rgba(12,16,25,1) 62%, rgba(0,0,0,1) 100%);
   background-repeat: no-repeat;
   background-attachment:  fixed;
   margin-top: 8%;
