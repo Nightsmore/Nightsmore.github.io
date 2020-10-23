@@ -14,6 +14,53 @@ p {
   margin: 50px auto;
  
 }
+
+#nav
+{
+  margin-top: 0;
+  top: 0;
+  padding-top: 0px;
+  position: fixed;
+  display: inline-block;
+  width: 100vw;
+  height: 5vh;
+  background-color:white;
+}
+#nav ul{
+  list-style: none;
+  position: absolute;
+}
+#footer
+{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100vw;
+  height: 7%;
+  background-color:black;
+  opacity: 1;
+  float: left;
+  
+  
+}
+#footer ul
+{
+  height: 5vh;
+  color: black;
+  display: inline-flex;
+  list-style: disc;
+  
+  
+}
+#footer li{
+  margin: 17px;
+  
+}
+#footer a
+{
+  font-size: 20px;
+  margin-bottom: 10%;
+}
 div{
   padding: 10px;
 }
@@ -124,7 +171,7 @@ div.title img
   margin: 40px auto;
   list-style-type: none;
   height: 100vh;
-  
+  width: 100vw;
   left:50%;
   text-align: center;
   
