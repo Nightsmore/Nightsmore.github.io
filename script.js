@@ -5,7 +5,7 @@ function populateList(pr)
     
     for(let i = 0; i < pr.length; i++)
     {
-        console.log(pr)
+        
         //li.setAttribute('id', pr.value);
         //li.appendChild(document.createTextNode(pr.value));
         //ul.appendChild(li);
@@ -53,11 +53,10 @@ function setCollapsibles()
 {
     var coll = document.getElementById("dynamic-list").getElementsByClassName("collapsible");
     var j;
-    console.log("here")
-    console.log("length is" + coll.length)
+    
     for (let j = 0; j < coll.length; j++) 
     {
-        console.log("here too")
+        
         coll[j].addEventListener("click", function() 
         {
             console.log(coll[j])
@@ -82,9 +81,11 @@ window.onload = function () {
         {
             var mass = Math.max(0.3, 1- 0.003*$(this).scrollTop());
 
-            $('.title').css('transform', 'scale('+ mass + ')');
+            $('.title').css('transform', 'scale(' + mass  + ')');
+            
         })
     })
+    
 
     
     
